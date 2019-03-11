@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  capitalquotes:
+    image: ${DOCKER_REGISTRY-}capitalquotes
+    build:
+      context: .\CapitalQuotes
+      dockerfile: Dockerfile
